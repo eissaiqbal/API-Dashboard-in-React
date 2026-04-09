@@ -1,0 +1,27 @@
+/* Light Theme (Default) */
+body.light-theme {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --text-primary: #1a1a1a;
+  --text-secondary: #666666;
+  --card-bg: #ffffff;
+  --border-color: #e0e0e0;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Theme */
+body.dark-theme {
+  --bg-primary: #121212;
+  --bg-secondary: #1e1e2e;
+  --text-primary: #f5f5f5;
+  --text-secondary: #b0b0b0;
+  --card-bg: #2a2a3a;
+  --border-color: #404040;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+html, body, #root {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
